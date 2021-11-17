@@ -5,18 +5,9 @@ using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Reports;
 using BenchmarkDotNet.Order;
 using Perfolizer.Horology;
-
-using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Globalization;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.WebUtilities;
-using Microsoft.Net.Http.Headers;
-#if NETCOREAPP
-using Microsoft.AspNetCore.Http.Extensions;
-#endif
 
 [DisassemblyDiagnoser(maxDepth: 0)]
 [MemoryDiagnoser(displayGenColumns: false)]
